@@ -1,12 +1,11 @@
 import random as r
+
 for j in range(10):
     result = []
-    for i in range(7):
+    while len(result) < 7:
         numbers = r.randint(1,50)
-        if numbers in result:
-            numbers = r.randint(1,50)
+        if numbers not in result:
             result.append(numbers)
-        else:
-            result.append(numbers)
+            
     result.sort()
     print(result)
