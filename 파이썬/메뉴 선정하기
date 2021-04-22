@@ -1,0 +1,36 @@
+import random as r
+
+menu = ['된장찌개', '피자', '제육볶음', '짜장면']
+
+while True:
+    print(menu)
+    plus_menu = input('음식을 추가 해주세요 (끝내기 : q) : ')
+    print()
+    
+    if plus_menu == 'q':
+        break
+    else:
+        menu.append(plus_menu)
+
+while True:
+    print(menu)
+    d_menu = input('음식을 삭제 해주세요 (끝내기 : q) : ')
+    print()
+    
+    if d_menu == 'q':
+        break
+    else:
+        menu.remove(d_menu)
+        
+print('=' * 30)
+
+
+while True:
+    print(menu)
+    input()
+    for i in range(5, 0, -1):
+        print(i)
+        
+    print()
+    print(r.choice(menu))
+    break
