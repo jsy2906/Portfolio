@@ -1,11 +1,7 @@
 import random as r
 
-for j in range(10):
-    result = []
-    while len(result) < 7:
-        numbers = r.randint(1,50)
-        if numbers not in result:
-            result.append(numbers)
-            
-    result.sort()
-    print(result)
+for i in range(10):
+    lotto_numbers = r.sample(range(1, 51), 7)
+    # random.sample( (튜플, 문자열, range, 리스트 등), 뽑을 인자의 개수 ) : 랜덤하게 뽑은 인자들을 리스트로 만들어서 반환
+    lotto_numbers.sort()
+    print(lotto_numbers)
