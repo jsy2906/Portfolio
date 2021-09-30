@@ -4,7 +4,7 @@ import json
 import time
 
 
-kakao_token = 'Jq0LopkxqTPLgrFytc6K9ZJV9xMLqdfe7wUZYAo9dVwAAAF3Gmvddg'
+kakao_token = 'token'
 def sendtoKakao(text):
     header = {'Authorization' : 'Bearer ' + kakao_token}
     url = 'https://kapi.kakao.com/v2/api/talk/memo/default/send'
